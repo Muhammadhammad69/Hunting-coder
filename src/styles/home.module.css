@@ -1,0 +1,17 @@
+.latestBlog{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.blogItems{
+    margin-top: 1rem;
+    text-align: start;
+}
+.blogItems h2{
+    font-size: 1.5rem;
+}
+.blogItems h5{
+    font-weight: lighter;
+    font-size: 1rem;
+}
