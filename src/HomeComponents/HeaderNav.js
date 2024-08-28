@@ -19,29 +19,32 @@ const HeaderNav = ({ pathName }) => {
     }
     for (let i = 0; i < ulLength; i++) {
       // if (flag) {
-        
-        getElements.children[i].childNodes[0].classList.remove("md:text-blue-700");
-        getElements.children[i].childNodes[0].classList.remove("bg-blue-700");
-        getElements.children[i].childNodes[0].classList.add("hover:bg-gray-100")
-        if (userText.trim() === getElements.children[i].innerText.trim()) {
-          getElements.children[i].childNodes[0].classList.remove("text-gray-950");
-          getElements.children[i].childNodes[0].classList.add("md:text-blue-700");
-          getElements.children[i].childNodes[0].classList.remove("hover:bg-gray-100")
-          getElements.children[i].childNodes[0].classList.add("bg-blue-700");
 
-        } else {
-          getElements.children[i].childNodes[0].classList.add("text-gray-950");
-        }
+      getElements.children[i].childNodes[0].classList.remove(
+        "md:text-blue-700"
+      );
+      getElements.children[i].childNodes[0].classList.remove("bg-blue-700");
+      getElements.children[i].childNodes[0].classList.add("hover:bg-gray-100");
+      if (userText.trim() === getElements.children[i].innerText.trim()) {
+        getElements.children[i].childNodes[0].classList.remove("text-gray-950");
+        getElements.children[i].childNodes[0].classList.add("md:text-blue-700");
+        getElements.children[i].childNodes[0].classList.remove(
+          "hover:bg-gray-100"
+        );
+        getElements.children[i].childNodes[0].classList.add("bg-blue-700");
+      } else {
+        getElements.children[i].childNodes[0].classList.add("text-gray-950");
+      }
       // } else {
-        
-        // getElements.children[i].childNodes[0].classList.replace(
-        //   "md:text-blue-700",
-        //   "bg-blue-700"
-        // );
-        // if(userText.trim() === getElements.children[i].innerText.trim()){
-        //   getElements.children[i].childNodes[0].classList.add("bg-blue-700");
 
-        // }
+      // getElements.children[i].childNodes[0].classList.replace(
+      //   "md:text-blue-700",
+      //   "bg-blue-700"
+      // );
+      // if(userText.trim() === getElements.children[i].innerText.trim()){
+      //   getElements.children[i].childNodes[0].classList.add("bg-blue-700");
+
+      // }
       // }
     }
   };
